@@ -10,9 +10,10 @@ const questions = [
   {
     type: "input",
     name: "text",
-    message: "What text would you like in your logo? (1 - 3 characters.)",
+    message: "Text must be 3 characters or less.",
     validate: (text) =>
-      text.length <= 3 || "Text must be between 1-3 characters.",
+      text.length <= 3 ||
+      "Text must be 3 characters or less. Please enter new text.",
   },
 
   {
